@@ -1,0 +1,56 @@
+# =============================
+# ASP.NET Core / .NET files
+# =============================
+
+# Build output
+bin/
+obj/
+out/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code
+.vscode/
+
+# Rider
+.idea/
+
+# DotNet
+*.dotCover
+*.ncrunch*
+*.VisualState.xml
+*.vs/
+
+# ASP.NET Core temporary files
+*.db
+*.db-shm
+*.db-wal
+appsettings.*.json
+appsettings.Local.json
+secrets.json
+
+# NuGet packages
+*.nupkg
+packages/
+.nuget/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Test results
+TestResults/
+*.trx
+
+# Published files
+publish/
