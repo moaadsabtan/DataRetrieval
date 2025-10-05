@@ -1,0 +1,99 @@
+{
+	"info": {
+		"_postman_id": "e0f782ef-99a8-41e5-92bb-6e4022647e82",
+		"name": "DataRetrievalAPI",
+		"description": "Postman collection for testing DataRetrievalAPI endpoints",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7977088"
+	},
+	"item": [
+		{
+			"name": "GET Data by Id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5016/data/{{id}}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5016",
+					"path": [
+						"data",
+						"{{id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Create Data",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"payload\": \"My new data\",\n  \"id\": \"123e4567-e89b-12d3-a456-426614174000\"  \n}"
+				},
+				"url": {
+					"raw": "http://localhost:5016/data",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5016",
+					"path": [
+						"data"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Update Data",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"payload\": \"My new data\",\n  \"id\": \"123e4567-e89b-12d3-a456-426614174000\"  \n}"
+				},
+				"url": {
+					"raw": "http://localhost:5016/data/{{id}}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5016",
+					"path": [
+						"data",
+						"{{id}}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "id",
+			"value": "123e4567-e89b-12d3-a456-426614174000"
+		}
+	]
+}
